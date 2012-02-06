@@ -1,0 +1,28 @@
+This is just a Sample PHP 5 library project including the jsTestDriver dependency.
+
+Building the project via 'mvn package' with the current version of the maven-php-plugin
+leads actual to the following error:
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[INFO] --- maven-php-plugin:1.1:phpunit (default-phpunit) @ my-php-lib ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.081s
+[INFO] Finished at: Mon Feb 06 21:23:00 CET 2012
+[INFO] Final Memory: 6M/15M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.phpmaven:maven-php-plugin:1.1:phpunit (default-phpunit) on project my-php-lib: ~/Develop/php/github/org.sample.my-php-lib/target/phpinc/META-INF/services/javax.xml.stream.XMLEventFactory (No such file or directory) -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+You might find further information under:
+https://groups.google.com/forum/?hl=de&fromgroups#!topic/maven-for-php/Kck79AzY5gU
+
